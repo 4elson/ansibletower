@@ -1,5 +1,8 @@
 ---
-- name: update the system
+- name: This updates all the packages avaliable in the system
+  hosts: all
+  tasks:
+  - name: upgrade all packages
     yum:
-      name: "*"
+      name: '*'
       state: latest
