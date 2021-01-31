@@ -7,6 +7,6 @@
       name: '*'
       state: latest
   - name: trivially create a file
-    shell: echo "hello" > /tmp/hello
+    shell: echo "Created by ansible tower patching" > /tmp/hello
     args:
-      creates: /tmp/hello
+      creates: /tmp/This_is_File
